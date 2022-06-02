@@ -14,7 +14,7 @@ body p, body h3 {
   font-style: normal;
 }
 .container {
-  padding: 0 331px 0 306px;
+  padding: 31px 331px 0 306px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,6 @@ body p, body h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 34px 0 40px 0;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -65,7 +64,7 @@ body p, body h3 {
   margin-right: 60px;
 }
 .header_info .work-time {
-  ont-family: "Gilroy";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -80,17 +79,13 @@ body p, body h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
 }
 .header_contacts .social-links {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .header_contacts .social-links li {
   margin-right: 26px;
@@ -98,6 +93,8 @@ body p, body h3 {
 .header_contacts .tel_numb {
   display: block;
   width: 178px;
+  padding-top: 31px;
+  margin: 0;
 }
 .header_contacts .tel_numb a {
   text-decoration: none;
@@ -118,4 +115,103 @@ body p, body h3 {
   line-height: 17px;
   color: #099DBA;
   float: right;
+}
+
+.promo {
+  background: url(../img/Rectangle125.jpg);
+  height: 700px;
+  padding-left: 318px;
+}
+.promo h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 120%;
+  color: #474551;
+  width: 920px;
+  padding-top: 92px;
+}
+.promo p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #099DBA;
+  width: 570px;
+  margin-bottom: 60px;
+}
+.promo span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #474551;
+}
+.promo .free {
+  color: #33D9DA;
+}
+.promo button {
+  padding: 9px 46px;
+  background: #046DBF;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 60px;
+}
+.promo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 82px;
+}
+
+.benefits_item {
+  width: 409px;
+  height: 150px;
+  background: #F3FEFE;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  position: relative;
+  margin-right: 30px;
+}
+.benefits_item h3 {
+  margin: 20px 0 10px 112px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #099DBA;
+}
+.benefits_item svg {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  margin-right: 39px;
+}
+.benefits_item .item-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+  width: 282px;
+  margin: 0 25px 36px 112px;
 }

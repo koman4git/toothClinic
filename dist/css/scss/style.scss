@@ -16,14 +16,13 @@ body {
   }
 
 .container {
-    padding: 0 331px 0 306px;
+    padding: 31px 331px 0 306px;
     display: flex;
     justify-content: space-between;
 }
 
 .header_info{
     display: flex;
-    padding: 34px 0 40px 0;
     justify-items: center;
     align-items: center;
     .header_logo{
@@ -59,7 +58,7 @@ body {
         margin-right: 60px;
     }
     .work-time{
-        ont-family: 'Gilroy';
+        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -70,14 +69,12 @@ body {
 .header_contacts {
     display: flex;
     align-items: center;
-    
+    justify-items: center;
     
     .social-links {
         list-style-type: none;
         display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: space-between;
+        
 
         li {
             margin-right: 26px;;
@@ -86,7 +83,9 @@ body {
     .tel_numb{
         display: block;
         width: 178px;
-        
+        padding-top: 31px;
+
+        margin: 0;
         a {
             text-decoration: none;
             font-family: 'Gilroy';
@@ -107,6 +106,97 @@ body {
             color: #099DBA;
             float: right;
         }
-        
+    }
+}
+.promo {
+    background: url(../img/Rectangle125.jpg);
+    height: 700px;
+    padding-left: 318px;
+   
+    h1 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 120%;
+        color: #474551;
+        width: 920px;
+        padding-top: 92px;
+    }
+    p {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        color: #099DBA;
+        width: 570px;
+        margin-bottom: 60px;
+    }
+    span {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: #474551;
+    }
+    .free {
+        color: #33D9DA;
+    }
+    button {
+        padding: 9px 46px;
+        background: #046DBF;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-top: 60px;
+    }
+    ul {
+        display: flex;
+    }
+}
+.benefits {
+    display: flex;
+    margin-top: 82px;
+}
+.benefits_item{
+    width: 409px;
+    height: 150px;
+    background: #F3FEFE;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    position: relative;
+    margin-right: 30px;
+
+    h3 {
+        margin: 20px 0 10px 112px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        color: #099DBA;
+    }
+    svg {
+        position: absolute;
+        left: 30px;
+        top: 50px;
+        margin-right: 39px;
+    }
+    .item-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #000000;
+        width: 282px;
+        margin: 0 25px 36px 112px;
     }
 }
