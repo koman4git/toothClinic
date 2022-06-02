@@ -1,4 +1,112 @@
 body {
-    background: red;
     box-sizing: border-box;
+    max-width: 1920px;
+    p, h3 {
+        margin: 0;
+    }
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('Gilroy-Regular.woff2') format('woff2'),
+        url('Gilroy-Regular.woff') format('woff'),
+        url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container {
+    padding: 0 331px 0 306px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_info{
+    display: flex;
+    padding: 34px 0 40px 0;
+    justify-items: center;
+    align-items: center;
+    .header_logo{
+        margin-right: 20px;
+    }
+    
+    h3 {
+        width: 190px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: #099DBA;
+        margin-right: 60px;
+    }
+    span {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #099DBA;
+    }
+    p {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #474551;
+        width: 190px;
+        margin-right: 60px;
+    }
+    .work-time{
+        ont-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #474551;
+    }
+}
+.header_contacts {
+    display: flex;
+    align-items: center;
+    
+    
+    .social-links {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+
+        li {
+            margin-right: 26px;;
+        }
+    }
+    .tel_numb{
+        display: block;
+        width: 178px;
+        
+        a {
+            text-decoration: none;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.025em;
+            color: #474551;
+            float: right;
+        }
+        .btn {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #099DBA;
+            float: right;
+        }
+        
+    }
 }

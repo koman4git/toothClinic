@@ -1,5 +1,121 @@
 body {
-  background: red;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 1920px;
+}
+body p, body h3 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("Gilroy-Regular.woff2") format("woff2"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  padding: 0 331px 0 306px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 34px 0 40px 0;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_info .header_logo {
+  margin-right: 20px;
+}
+.header_info h3 {
+  width: 190px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #099DBA;
+  margin-right: 60px;
+}
+.header_info span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #099DBA;
+}
+.header_info p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #474551;
+  width: 190px;
+  margin-right: 60px;
+}
+.header_info .work-time {
+  ont-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #474551;
+}
+
+.header_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_contacts .social-links {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_contacts .social-links li {
+  margin-right: 26px;
+}
+.header_contacts .tel_numb {
+  display: block;
+  width: 178px;
+}
+.header_contacts .tel_numb a {
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.025em;
+  color: #474551;
+  float: right;
+}
+.header_contacts .tel_numb .btn {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #099DBA;
+  float: right;
 }
