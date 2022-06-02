@@ -215,3 +215,94 @@ body p, body h3 {
   width: 282px;
   margin: 0 25px 36px 112px;
 }
+
+.consultation {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.consultation h2 {
+  margin: 228px 0 20px 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+  color: #474551;
+}
+.consultation p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #099DBA;
+}
+.consultation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 315px 40px 315px;
+  list-style-type: none;
+  width: 1290px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.consultation li {
+  width: 410px;
+  text-align: center;
+}
+.consultation li p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #474551;
+  margin-bottom: 20px;
+}
+.consultation li span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #474551;
+  display: block;
+}
+.consultation li img {
+  width: 100%;
+}
+.consultation button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: #046DBF;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  width: 404px;
+  height: 60px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin: 40px 761px 0 755px;
+}
