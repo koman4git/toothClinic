@@ -306,3 +306,215 @@ body p, body h3 {
   color: #FFFFFF;
   margin: 40px 761px 0 755px;
 }
+
+.promotions {
+  text-align: center;
+}
+.promotions h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+  color: #474551;
+  margin: 90px 0 30px 0;
+}
+.promotions p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #099DBA;
+}
+.promotions span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #046DBF;
+  margin-bottom: 29px;
+}
+.promotions .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 315px 40px 315px;
+}
+.promotions .actions li {
+  position: relative;
+}
+.promotions .actions button {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #099DBA;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #099DBA;
+  height: 40px;
+  width: 182px;
+  left: 114px;
+  top: 349px;
+  border-radius: 30px;
+  position: absolute;
+}
+.promotions .actions button:active {
+  background: #046DBF;
+}
+
+.arrow-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  position: absolute;
+  left: 1600px;
+  top: 2292px;
+  border: #F3FEFE;
+}
+.arrow-right .img-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  top: -35px;
+  left: -20px;
+}
+
+.arrow-left {
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  position: absolute;
+  left: 270px;
+  top: 2292px;
+  border: #F3FEFE;
+}
+.arrow-left img {
+  position: absolute;
+  top: -5px;
+  left: -20px;
+}
+
+.arrow-left:active {
+  background: #046DBF;
+}
+
+.arrow-right:active {
+  background: #046DBF;
+}
+
+.carousel {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 800px;
+  position: relative;
+}
+.carousel li {
+  margin-right: 20px;
+}
+.carousel div {
+  width: 18px;
+  height: 18px;
+  background: #BDF8F9;
+  border-radius: 50%;
+}
+.carousel div:hover {
+  width: 18px;
+  height: 18px;
+  background: #33D9DA;
+}
+
+.modal {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 480px;
+  height: 400px;
+  background: #F3FEFE;
+  display: none;
+  position: absolute;
+  top: 2150px;
+  left: 701px;
+  border-radius: 10px;
+}
+.modal .modal-close {
+  margin: 21px 0 0 437px;
+}
+.modal .modal-vk {
+  color: #474551;
+}
+.modal .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #099DBA;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  width: 334px;
+  height: 40px;
+  margin: 60px 73px 33px 73px;
+  text-decoration: none;
+}
+.modal .btn-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #099DBA;
+}
+.modal .messenger-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 98px;
+}
+.modal .messenger-block a {
+  margin-right: 16px;
+}
+.modal .messenger-block-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #474551;
+  display: block;
+  margin-left: 30px;
+}
