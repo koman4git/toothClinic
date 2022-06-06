@@ -21,7 +21,14 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+h3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099DBA;
+}
 .header_info{
     display: flex;
     justify-items: center;
@@ -32,12 +39,6 @@ body {
     
     h3 {
         width: 190px;
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 120%;
-        color: #099DBA;
         margin-right: 60px;
     }
     span {
@@ -177,12 +178,6 @@ body {
 
     h3 {
         margin: 20px 0 10px 112px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 140%;
-        color: #099DBA;
     }
     svg {
         position: absolute;
@@ -495,7 +490,7 @@ body {
     list-style-type: none;
     padding-top: 58px;
     flex-wrap: wrap;
-    
+    position: relative;
     .servis {
         width: 600px;
         height: 560px;
@@ -506,12 +501,6 @@ body {
         border-radius: 20px;
         margin-bottom: 30px;
         h3 {
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 140%;
-            color: #099DBA;
             text-align: left;
             padding-top: 60px;
             padding-bottom: 9px;
@@ -609,10 +598,11 @@ body {
     height: 400px;
     background: #F3FEFE;
     position: absolute;
-    top: 2150px;
+    top: 1000px;
     left: 701px;
     border-radius: 10px;
-    display: block;
+    display: none;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     .modal-close {
         margin: 21px 0 0 437px ;
     }
@@ -639,6 +629,14 @@ body {
         font-size: 20px;
         line-height: 25px;
         color: #099DBA;
+    }
+}
+//section video
+.video {
+    background: #F3FEFE;
+    // padding: 60px 80px 0 80px;
+    .video-description {
+        
     }
 }
 
