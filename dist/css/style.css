@@ -613,7 +613,8 @@ h3 {
 .servises .btn-block a {
   text-decoration: none;
 }
-.servises .btn-block .btn-left {
+
+.btn-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,7 +647,8 @@ h3 {
   line-height: 25px;
   color: #099DBA;
 }
-.servises .btn-block .btn-right {
+
+.btn-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,6 +735,50 @@ h3 {
   color: #099DBA;
 }
 
-.video {
+.video-block {
   background: #F3FEFE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 60px 80px 0 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.video-block span {
+  color: #046DBF;
+}
+.video-block video {
+  max-width: 550px;
+}
+.video-block p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #099DBA;
+  padding: 60px 0 9px 0;
+}
+.video-block ul {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  color: #474551;
+  max-width: 549px;
+  margin: 0 0 0 31px;
+}
+.video-block ul li {
+  margin-bottom: 20px;
+}
+
+.video-description {
+  position: relative;
+}
+.video-description .btn-right {
+  position: absolute;
+  text-decoration: none;
 }
