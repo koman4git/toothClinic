@@ -502,7 +502,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 98px;
+  margin: 0px 0px 30px 22%;
 }
 .messenger-block a {
   margin-right: 16px;
@@ -605,23 +605,23 @@ h3 {
   width: 391px;
   height: 180px;
 }
-.servises .btn-block {
+
+.btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 408px;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.servises .btn-block a {
+.btn-block a {
   text-decoration: none;
 }
 
 .btn-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  width: 190px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -629,13 +629,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  gap: 10px;
-  position: absolute;
-  left: 17.78%;
-  right: 52.38%;
-  top: 85.71%;
-  bottom: 7.14%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   border: 2px solid #099DBA;
   -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -652,6 +646,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 190px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -664,11 +659,6 @@ h3 {
           align-items: center;
   padding: 10px;
   gap: 10px;
-  position: absolute;
-  left: 52.38%;
-  right: 17.46%;
-  top: 85.71%;
-  bottom: 7.14%;
   background: #BDF8F9;
   border: 2px solid #099DBA;
   -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -680,6 +670,25 @@ h3 {
   font-size: 20px;
   line-height: 25px;
   color: #099DBA;
+}
+
+.btn-left:active {
+  background: #046DBF;
+  color: #FFFFFF;
+}
+
+.btn-right:active {
+  background: #099DBA;
+  color: #FFFFFF;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.choose-doctor-baground {
+  background: #046DBF;
+  color: #FFFFFF;
 }
 
 .modal-download {
@@ -781,4 +790,86 @@ h3 {
 .video-description .btn-right {
   position: absolute;
   text-decoration: none;
+}
+
+.process-steps {
+  background: url(../img/process-steps.png);
+  width: 1290px;
+  height: 859px;
+  display: block;
+  position: relative;
+}
+.process-steps .process-steps-list {
+  list-style-type: none;
+  padding-top: 60px;
+  margin-left: 80px;
+  margin-bottom: 63px;
+  position: relative;
+}
+.process-steps .item2 {
+  position: absolute;
+  top: 30px;
+  left: 110px;
+}
+.process-steps .item3 {
+  position: absolute;
+  top: 60px;
+  left: 220px;
+}
+.process-steps .item4 {
+  position: absolute;
+  top: 90px;
+  left: 330px;
+}
+.process-steps .btn-block {
+  position: absolute;
+  left: 400px;
+  top: 740px;
+}
+.process-steps .process-steps-item {
+  width: 770px;
+  height: 120px;
+  background: #BDF8F9;
+  border-radius: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.process-steps .process-steps-item div {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.process-steps .process-steps-item div span {
+  font-family: "Gilroy";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 140%;
+  color: #046DBF;
+  display: block;
+}
+.process-steps .process-steps-item p {
+  width: 593px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #474551;
+  margin-top: 18px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.top-left {
+  position: absolute;
+  top: 690px;
+  left: 175px;
 }

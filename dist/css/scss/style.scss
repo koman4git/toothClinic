@@ -437,7 +437,7 @@ h3 {
 
 .messenger-block {
     display: flex;
-    margin-left: 98px;
+    margin: 0px 0px 30px 22%;
     
     a {
         margin-right: 16px;
@@ -538,28 +538,25 @@ h3 {
         height: 180px;
     }
     
-    .btn-block {
-        display: flex;
-        
-        a {
-            text-decoration: none;
-        }
-        
-    }
+    
 }
-.btn-left {
+.btn-block {
     display: flex;
-    flex-direction: row;
+    width: 408px;
+    margin: auto;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+    }
+    
+}
+
+.btn-left {
+    width: 190px;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 10px;
-    position: absolute;
-    left: 17.78%;
-    right: 52.38%;
-    top: 85.71%;
-    bottom: 7.14%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border: 2px solid #099DBA;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
@@ -572,16 +569,12 @@ h3 {
 }
 .btn-right {
     display: flex;
+    width: 190px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
     gap: 10px;
-    position: absolute;
-    left: 52.38%;
-    right: 17.46%;
-    top: 85.71%;
-    bottom: 7.14%;
     background: #BDF8F9;
     border: 2px solid #099DBA;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -592,6 +585,21 @@ h3 {
     font-size: 20px;
     line-height: 25px;
     color: #099DBA;
+}
+.btn-left:active {
+    background: #046DBF;
+    color: #FFFFFF;
+}
+.btn-right:active {
+    background: #099DBA;
+    color: #FFFFFF;
+}
+.margin-top {
+    margin-top: 30px;
+}
+.choose-doctor-baground {
+    background: #046DBF;
+    color: #FFFFFF;
 }
 .modal-download {
     align-items: center;
@@ -678,6 +686,88 @@ h3 {
         text-decoration: none;
         
     }
+}
+//секция - этапы процесса
+.process-steps {
+    background: url(../img/process-steps.png);
+    width: 1290px;
+    height: 859px;
+
+    display: block;
+    position: relative;
+    .process-steps-list {
+        list-style-type: none;
+        padding-top: 60px;
+        margin-left: 80px;
+        margin-bottom: 63px;
+        position: relative;
+    }
+    .item2 {
+        position: absolute;
+        top: 30px;
+        left: 110px;
+    }
+    .item3 {
+        position: absolute;
+        top: 60px;
+        left: 220px;
+    }
+    .item4 {
+        position: absolute;
+        top: 90px;
+        left: 330px;
+    }
+    .btn-block {
+        position: absolute;
+        left: 400px;
+        top: 740px;
+    }
+    
+    .process-steps-item {
+        width: 770px;
+        height: 120px;
+        background: #BDF8F9;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        div {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background: #FFFFFF;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            
+            span {
+                font-family: 'Gilroy';
+                font-style: italic;
+                font-weight: 700;
+                font-size: 68px;
+                line-height: 140%;
+                color: #046DBF;
+                display: block;
+            }
+        } p {
+            width: 593px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color: #474551;
+            margin-top: 18px;
+            text-align: left;
+            margin-left: 30px;
+        }
+    }
+}
+.top-left {
+    position: absolute;
+    top: 690px;
+    left: 175px;
+
 }
 
 
