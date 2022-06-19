@@ -16,12 +16,16 @@ body p, body h3 {
 .container {
   max-width: 1290px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+  color: #474551;
+  margin: 0 0 30px 0;
 }
 
 h3 {
@@ -31,6 +35,33 @@ h3 {
   font-size: 28px;
   line-height: 140%;
   color: #099DBA;
+  margin: 0 auto;
+  width: 1066px;
+}
+
+h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #099DBA;
+  margin: 0;
+}
+
+p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #099DBA;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header_info {
@@ -41,6 +72,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header_info .header_logo {
   margin-right: 20px;
@@ -219,23 +253,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.consultation h2 {
-  margin: 228px 0 20px 0;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 120%;
-  color: #474551;
-}
-.consultation p {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 140%;
-  color: #099DBA;
+  padding-top: 228px;
 }
 .consultation ul {
   display: -webkit-box;
@@ -307,23 +325,7 @@ h3 {
 
 .promotions {
   text-align: center;
-}
-.promotions h2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 120%;
-  color: #474551;
-  margin: 90px 0 30px 0;
-}
-.promotions p {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 140%;
-  color: #099DBA;
+  padding-top: 90px;
 }
 .promotions span {
   font-family: "Gilroy";
@@ -379,6 +381,7 @@ h3 {
 }
 .promotions .actions button:active {
   background: #046DBF;
+  color: #FFFFFF;
 }
 
 .arrow-right {
@@ -411,6 +414,7 @@ h3 {
   position: absolute;
   top: -5px;
   left: -20px;
+  border-radius: 50%;
 }
 
 .arrow-left:active {
@@ -521,23 +525,7 @@ h3 {
 .servises-block {
   text-align: center;
   position: relative;
-}
-.servises-block h2 {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 42px;
-  line-height: 120%;
-  color: #474551;
-  margin: 90px 0 30px 0;
-}
-.servises-block p {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 140%;
-  color: #099DBA;
+  padding-top: 90px;
 }
 .servises-block .servises-block-text {
   font-family: "Gilroy";
@@ -675,11 +663,13 @@ h3 {
 .btn-left:active {
   background: #046DBF;
   color: #FFFFFF;
+  border: 2px solid #046DBF;
 }
 
 .btn-right:active {
   background: #099DBA;
   color: #FFFFFF;
+  border: 2px solid #099DBA;
 }
 
 .margin-top {
@@ -689,6 +679,10 @@ h3 {
 .choose-doctor-baground {
   background: #046DBF;
   color: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  border: 2px solid #046DBF;
 }
 
 .modal-download {
@@ -749,28 +743,25 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  padding: 60px 80px 0 80px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-.video-block span {
+.video-block h3 span {
   color: #046DBF;
 }
-.video-block video {
-  max-width: 550px;
+.video-block h4 {
+  margin: 60px 0 9px 0;
 }
-.video-block p {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #099DBA;
-  padding: 60px 0 9px 0;
+
+.video-description {
+  position: relative;
+  width: 550px;
+  margin: 60px 0 36px 80px;
 }
-.video-block ul {
+.video-description .btn-right {
+  position: absolute;
+}
+
+.video-advantages {
+  width: 550px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
@@ -778,18 +769,10 @@ h3 {
   line-height: 140%;
   color: #474551;
   max-width: 549px;
-  margin: 0 0 0 31px;
+  margin: 60px 80px 0 30px;
 }
-.video-block ul li {
+.video-advantages li {
   margin-bottom: 20px;
-}
-
-.video-description {
-  position: relative;
-}
-.video-description .btn-right {
-  position: absolute;
-  text-decoration: none;
 }
 
 .process-steps {
@@ -872,4 +855,184 @@ h3 {
   position: absolute;
   top: 690px;
   left: 175px;
+}
+
+.doctors {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.doctors h2 {
+  margin: 90px 0px 30px 0px;
+}
+.doctors h3 {
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.doctors-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.doctors-block h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #474551;
+  margin: 23px 0 7px 0;
+}
+.doctors-block p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  color: #099DBA;
+}
+.doctors-block p span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  color: #474551;
+}
+
+.doctors-list {
+  list-style-type: none;
+  padding: 0;
+}
+.doctors-list .doctors-item {
+  width: 630px;
+  background: #F3FEFE;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 33px;
+}
+.doctors-list .doctors-item .doctors-item-description {
+  text-align: left;
+}
+.doctors-list .doctors-item:hover {
+  background: #BDF8F9;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.doctors-cards {
+  list-style-type: none;
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+.doctor-card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 630px;
+  height: 690px;
+  text-align: left;
+  padding-top: 40px;
+  position: relative;
+}
+.doctor-card h4 {
+  margin: 40px 0px 11px 30px;
+}
+.doctor-card .main-foto {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 110px;
+}
+.doctor-card span {
+  display: block;
+  margin: 0 0 0 30px;
+}
+.doctor-card p {
+  margin: 0 0 0 30px;
+}
+.doctor-card .btn-block {
+  position: absolute;
+  top: 800px;
+  left: 250px;
+}
+.doctor-card .messenger-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 870px;
+  left: 50px;
+}
+.doctor-card .doctor-info {
+  width: 320px;
+  height: 326px;
+  background: rgba(243, 254, 254, 0.8);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 16px;
+  top: 400px;
+}
+.doctor-card .doctor-info span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #099DBA;
+  margin: 16px 0 10px 14px;
+}
+.doctor-card .doctor-info p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #474551;
+  margin-left: 14px;
+  margin-right: 10px;
+}
+.doctor-card .arrow-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  position: absolute;
+  left: 613px;
+  top: 265px;
+  border: #F3FEFE;
+}
+.doctor-card .arrow-right .img-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  top: -35px;
+  left: -20px;
+}
+.doctor-card .arrow-left {
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  position: absolute;
+  left: -22px;
+  top: 265px;
+  border: #F3FEFE;
+}
+.doctor-card .arrow-left img {
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  border-radius: 50%;
 }
