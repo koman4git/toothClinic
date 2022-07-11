@@ -1,8 +1,8 @@
 body {
     box-sizing: border-box;
     max-width: 1920px;
-    p, h3 {
-        margin: 0;
+    p {
+        margin: 0 ;
     }
 }
 @font-face {
@@ -14,7 +14,11 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-
+$turquoise-color: #099DBA;
+$dark-gray: #474551;
+$white-color: #F3FEFE;
+$light-blue: #BDF8F9;
+$white: #FFFFFF;
 .container {
     max-width: 1290px;
     margin: auto;
@@ -26,8 +30,9 @@ h2 {
     font-weight: 500;
     font-size: 42px;
     line-height: 120%;
-    color: #474551;
+    color: $dark-gray;
     margin: 0 0 30px 0;
+    text-align: center;
 }
 h3 {
     font-family: 'Gilroy';
@@ -35,9 +40,10 @@ h3 {
     font-weight: 600;
     font-size: 28px;
     line-height: 140%;
-    color: #099DBA;
+    color: $turquoise-color;
     margin: 0 auto;
-    width: 1066px;
+    max-width: 1066px;
+    text-align: center;
 }
 h4 {
     font-family: 'Gilroy';
@@ -45,7 +51,7 @@ h4 {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #099DBA;
+    color: $turquoise-color;
     margin: 0;
 }  
 p {
@@ -54,7 +60,7 @@ p {
     font-weight: 600;
     font-size: 28px;
     line-height: 140%;
-    color: #099DBA;
+    color: $turquoise-color;
 }
 header {
     display: flex;
@@ -68,7 +74,6 @@ header {
     .header_logo{
         margin-right: 20px;
     }
-    
     h3 {
         width: 190px;
         margin-right: 60px;
@@ -79,7 +84,15 @@ header {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        color: #099DBA;
+        color: $turquoise-color;
+    }
+    .clinic-name {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: $turquoise-color;
     }
     p {
         font-family: 'Gilroy';
@@ -87,7 +100,7 @@ header {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
-        color: #474551;
+        color: $dark-gray;
         width: 190px;
         margin-right: 60px;
     }
@@ -97,7 +110,7 @@ header {
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #474551;
+        color: $dark-gray;
     }
 }
 .header_contacts {
@@ -128,7 +141,7 @@ header {
             font-size: 20px;
             line-height: 140%;
             letter-spacing: 0.025em;
-            color: #474551;
+            color: $dark-gray;
             float: right;
         }
         .btn {
@@ -137,7 +150,7 @@ header {
             font-weight: 700;
             font-size: 14px;
             line-height: 17px;
-            color: #099DBA;
+            color: $turquoise-color;
             float: right;
         }
     }
@@ -153,19 +166,15 @@ header {
         font-weight: 700;
         font-size: 58px;
         line-height: 120%;
-        color: #474551;
+        color: $dark-gray;
         width: 920px;
         padding-top: 92px;
     }
-    p {
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 140%;
-        color: #099DBA;
+    h3 {
         width: 570px;
         margin-bottom: 60px;
+        margin-left: 0;
+        text-align: inherit;
     }
     span {
         font-family: 'Gilroy';
@@ -173,7 +182,7 @@ header {
         font-weight: 400;
         font-size: 24px;
         line-height: 140%;
-        color: #474551;
+        color: $dark-gray;
     }
     .free {
         color: #33D9DA;
@@ -249,7 +258,7 @@ header {
             font-size: 24px;
             line-height: 29px;
             text-align: center;
-            color: #474551;
+            color: $dark-gray;
             margin-bottom: 20px;
         }
         span {
@@ -258,7 +267,7 @@ header {
             font-weight: 400;
             font-size: 18px;
             line-height: 22px;
-            color: #474551;
+            color: $dark-gray;
             display: block;
             
         }
@@ -315,7 +324,7 @@ header {
             align-items: center;
             gap: 10px;
             background: rgba(255, 255, 255, 0.6);
-            border: 2px solid #099DBA;
+            border: 2px solid $turquoise-color;
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
             border-radius: 30px;
             font-family: 'Gilroy';
@@ -323,7 +332,7 @@ header {
             font-weight: 600;
             font-size: 20px;
             line-height: 25px;
-            color: #099DBA;
+            color: $turquoise-color;
             height: 40px;
             width: 182px;
             left: 114px;
@@ -344,13 +353,20 @@ header {
     position: absolute;
     left: 1600px;
     top: 2292px;
-    border: #F3FEFE;
-    .img-right {
-        transform: rotate(180deg);
-        position: absolute;
-        top: -35px;
-        left: -20px;
-    }
+    border: $white-color;
+    background: url(../img/arrow-right.png);
+    cursor: pointer;
+    
+    // .img-right {
+    //     transform: rotate(180deg);
+    //     position: absolute;
+    //     top: -35px;
+    //     left: -20px;
+    //     border-radius: 50%;
+    // }
+}
+.arrow-right:active {
+    background: transparent;
 }
 .arrow-left {
     width: 40px;
@@ -360,6 +376,7 @@ header {
     left: 270px;
     top: 2292px;
     border: #F3FEFE;
+    cursor: pointer;
     img {
         position: absolute;
         top: -5px;
@@ -385,7 +402,7 @@ header {
     div {
         width: 18px;
         height: 18px;
-        background: #BDF8F9;
+        background: $light-blue;
         border-radius: 50%;
     }
     div:hover {
@@ -408,7 +425,7 @@ header {
         margin: 21px 0 0 437px ;
     }
     .modal-vk {
-        color: #474551;
+        color: $dark-gray;
     }
     .btn {
         display: flex;
@@ -418,7 +435,7 @@ header {
         padding: 10px;
         gap: 10px;
         background: rgba(255, 255, 255, 0.6);
-        border: 2px solid #099DBA;
+        border: 2px solid $turquoise-color;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
         border-radius: 30px;
         width:334px;
@@ -432,7 +449,7 @@ header {
         font-weight: 600;
         font-size: 20px;
         line-height: 25px;
-        color: #099DBA;
+        color: $turquoise-color;
     }
     
 }
@@ -450,7 +467,7 @@ header {
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: #474551;
+        color: $dark-gray;
         display: block;
         margin-left: 30px;
     }
@@ -482,7 +499,7 @@ header {
     .servis {
         width: 600px;
         height: 560px;
-        background: #F3FEFE;
+        background: $white-color;
         padding-left: 30px;
         position: relative;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -505,7 +522,7 @@ header {
             font-weight: 600;
             font-size: 22px;
             line-height: 140%;
-            color: #474551;
+            color: $dark-gray;
         }
     }
     .servis-descrip {
@@ -514,7 +531,7 @@ header {
         font-weight: 400;
         font-size: 18px;
         line-height: 140%;
-        color: #474551;
+        color: $dark-gray;
         text-align: left;
         width: 366px;
         height: 58px;
@@ -545,7 +562,7 @@ header {
     align-items: center;
     padding: 10px;
     background: rgba(255, 255, 255, 0.8);
-    border: 2px solid #099DBA;
+    border: 2px solid $turquoise-color;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
     font-family: 'Gilroy';
@@ -553,7 +570,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
-    color: #099DBA;
+    color: $turquoise-color;
 }
 .btn-right {
     display: flex;
@@ -563,8 +580,8 @@ header {
     align-items: center;
     padding: 10px;
     gap: 10px;
-    background: #BDF8F9;
-    border: 2px solid #099DBA;
+    background: $light-blue;
+    border: 2px solid $turquoise-color;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
     font-family: 'Gilroy';
@@ -572,7 +589,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
-    color: #099DBA;
+    color: $turquoise-color;
 }
 .btn-left:active {
     background: #046DBF;
@@ -580,9 +597,9 @@ header {
     border: 2px solid #046DBF;
 }
 .btn-right:active {
-    background: #099DBA;
+    background: $turquoise-color;
     color: #FFFFFF;
-    border: 2px solid #099DBA;
+    border: 2px solid $turquoise-color;
 }
 .margin-top {
     margin-top: 30px;
@@ -616,7 +633,7 @@ header {
         padding: 10px;
         gap: 10px;
         background: rgba(255, 255, 255, 0.6);
-        border: 2px solid #099DBA;
+        border: 2px solid $turquoise-color;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
         border-radius: 30px;
         width:334px;
@@ -630,7 +647,7 @@ header {
         font-weight: 600;
         font-size: 20px;
         line-height: 25px;
-        color: #099DBA;
+        color: $turquoise-color;
     }
 }
 //section video
@@ -664,7 +681,7 @@ header {
     font-weight: 500;
     font-size: 22px;
     line-height: 140%;
-    color: #474551;
+    color: $dark-gray;
     max-width: 549px;
     margin: 60px 80px 0 30px;
     li {
@@ -710,7 +727,7 @@ header {
     .process-steps-item {
         width: 770px;
         height: 120px;
-        background: #BDF8F9;
+        background: $light-blue;
         border-radius: 20px;
         text-align: center;
         display: flex;
@@ -738,9 +755,9 @@ header {
             font-family: 'Gilroy';
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 22px;
             line-height: 140%;
-            color: #474551;
+            color: $dark-gray;
             margin-top: 18px;
             text-align: left;
             margin-left: 30px;
@@ -777,7 +794,7 @@ header {
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
-        color: #474551;
+        color: $dark-gray;
         margin: 23px 0 7px 0;
     }
     p {
@@ -786,14 +803,14 @@ header {
         font-weight: 700;
         font-size: 22px;
         line-height: 140%;
-        color: #099DBA;
+        color: $turquoise-color;
         span {
             font-family: 'Gilroy';
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 110%;
-            color: #474551;
+            color: $dark-gray;
         }
     }
 }
@@ -814,7 +831,7 @@ header {
         }
     }
     .doctors-item:hover {
-        background: #BDF8F9;
+        background: $light-blue;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
     }
@@ -833,8 +850,13 @@ header {
     text-align: left;
     padding-top: 40px;
     position: relative;
-    h4 {
-        margin: 40px 0px 11px 30px;
+    .doctors-name {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: $dark-gray;
     }
     .main-foto {
         display: block;
@@ -876,7 +898,7 @@ header {
             font-weight: 400;
             font-size: 20px;
             line-height: 140%;
-            color: #099DBA;
+            color: $turquoise-color;
             margin: 16px 0 10px 14px;
         }
         p {
@@ -885,7 +907,7 @@ header {
             font-weight: 500;
             font-size: 18px;
             line-height: 140%;
-            color: #474551;
+            color: $dark-gray;
             margin-left: 14px;
             margin-right: 10px;
         }
@@ -898,6 +920,7 @@ header {
         left: 613px;
         top: 265px;
         border: #F3FEFE;
+        cursor: pointer;
         .img-right {
             transform: rotate(180deg);
             position: absolute;
@@ -913,6 +936,7 @@ header {
         left: -22px;
         top: 265px;
         border: #F3FEFE;
+        cursor: pointer;
         img {
             position: absolute;
             top: -5px;
@@ -922,6 +946,335 @@ header {
         
     }
 }
+//блок электронного помощника выбора услуг
+.servises-menu {
+    margin-top: 98px;
+    margin-bottom: 128px;
+}
+.servises-menu-header {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: $turquoise-color;
+    margin-bottom: 45px;
+    span {
+        color: #046DBF;
+    }
+}
+.servises-menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.servises-menu-item {
+    position: relative;
+}
+.servise-menu-item {
+    width: 190px;
+    height: 130px;
+    background: $white-color;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    
+}
+.servise-name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: $turquoise-color;
+}
+.circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: $light-blue;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 26px 11px 25px;
+    img {
+        display: block;
+    }
+}
+.servises-menu-item:hover {
+    cursor: pointer;
+    .circle {
+        background: $white-color;
+    }
+    .servise-menu-item {
+        background: $light-blue;  
+    }
+    .servise-name {
+        color: $white-color;
+    }
+}
+//блок выбора направления медицины
+.choose-servise-section {
+    background: $white-color;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 90px 0 100px 0;
+    position: relative;
+    .close {
+        position: absolute;
+        left: 1832px;
+        top: 25px;
+        cursor: pointer;
+    }
+}
+.choose-servise {
+    span {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .choose-servise-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: $dark-gray;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .doctors-cards {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .doctor-card {
+        margin-bottom: 60px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+.links-block {
 
-
-
+}
+.link {
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    color: $dark-gray;
+}
+.link:hover {
+    color: #046DBF;
+}
+.link-right {
+    float: right;
+}
+//блок записи к доктору
+.doctor-contact-section {
+    background: $white-color;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 90px;
+}
+.doctor-contact__block {
+    .doctor-contact__block-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 140%;
+        color: $dark-gray;
+        }
+    span {
+        color: #33D9DA;
+    }
+    .doctors-cards {
+        margin: 90px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-block {
+        span {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 140%;
+        }
+        .messenger-block {
+            margin: 85px auto 33px 160px;
+        }
+    }
+    .contact-block-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 140%;
+        color: $dark-gray;
+        width: 630px;
+        margin-top: 31px;
+    }
+    .form-block {
+        width: 630px;
+        height: 332px;
+        background: $white;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+    }
+    .form-block-description {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $turquoise-color;
+        width: 370px;
+        margin: 0 auto;
+    }
+    form {
+        margin-top: 25px;
+    }
+    input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 300px;
+        height: 40px;
+        background: $white;
+        border: 2px solid $light-blue;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $light-blue;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        background: #046DBF;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 300px;
+        height: 40px;
+        background: #046DBF;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+    }
+}
+.links-block {
+    margin-top: 30px;
+}
+.close {
+    background: $white;
+    border-radius: 50%;
+    position: absolute;
+    left: 1832px;
+    top: 25px;
+    cursor: pointer;
+}
+//блок с отзывами
+.reviews {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+    position: relative;
+}
+.review {
+    width: 630px;
+    height: 300px;
+    background: $white-color;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 31px 0 30px;
+}
+.review-text {
+    width: 378px;
+}
+.review-img {
+    width: 160px;
+    height: 160px;
+}
+.review-name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $dark-gray;
+    margin-bottom: 20px;
+}
+.review-decription {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $dark-gray;
+}
+.arr {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: $light-blue;
+    border: 2px solid $turquoise-color;
+    position: absolute;
+}
+.arr-left {
+    top: 8188px;
+    left: 285px;
+}
+.arr-right {
+    top: 8188px;
+    left: 1570px;
+    .arr-img {
+        transform: rotate(180deg);
+    }
+}
+.arr-img {
+    margin-top: 8px;
+}
+.arr:active {
+    background: #33D9DA;
+}
