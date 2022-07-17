@@ -314,7 +314,6 @@ header {
         display: flex;
         list-style-type: none;
         justify-content: space-between;
-        padding: 0 315px 40px 315px;
         li {
             position: relative;
         }
@@ -1208,6 +1207,9 @@ header {
     cursor: pointer;
 }
 //блок с отзывами
+.reviews-section {
+    justify-content: center;
+}
 .reviews {
     display: flex;
     list-style-type: none;
