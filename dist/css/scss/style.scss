@@ -393,8 +393,8 @@ header {
 .carousel{
     list-style-type: none;
     display: flex;
-    margin-left: 800px;
-    position: relative;
+    padding: 0;
+    margin: 30px 0px 0px 500px;
     li {
         margin-right: 20px;
     }
@@ -1209,8 +1209,9 @@ header {
 //блок с отзывами
 .reviews-section {
     justify-content: center;
+    position: relative;
 }
-.reviews {
+.ul-for-section {
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -1224,17 +1225,19 @@ header {
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 31px 0 30px;
+    position: relative;
 }
 .review-text {
     width: 378px;
+    margin-top: 41px;
 }
 .review-img {
     width: 160px;
     height: 160px;
+    margin-top: 71px;
 }
 .review-name {
     font-family: 'Gilroy';
@@ -1253,6 +1256,20 @@ header {
     line-height: 140%;
     color: $dark-gray;
 }
+.review-date {
+    display: block;
+    position: absolute;
+    left: 83.17%;
+    right: 4.76%;
+    top: 86%;
+    bottom: 6.67%;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $dark-gray;
+}
 .arr {
     width: 40px;
     height: 40px;
@@ -1264,12 +1281,12 @@ header {
     position: absolute;
 }
 .arr-left {
-    top: 8188px;
-    left: 285px;
+    top: 310px;
+    left: -20px;
 }
 .arr-right {
-    top: 8188px;
-    left: 1570px;
+    top: 310px;
+    left: 1270px;
     .arr-img {
         transform: rotate(180deg);
     }
@@ -1279,4 +1296,121 @@ header {
 }
 .arr:active {
     background: #33D9DA;
+}
+.link-vk {
+    position: absolute;
+    top: 500px;
+    left: 1134px;
+    align-items: center;
+    display: flex;
+}
+.link_vk {
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-gray;
+    text-decoration: none;
+}
+.vk-icon {
+    
+    margin-left: 20px;
+}
+//блоок лицензии и награды
+.licenses-section {
+    position: relative;
+    margin-top: 90px;
+}
+.licenses-item {
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+}
+.license1 {
+    background-image: url(../img/license1.png);
+}
+.license2 {
+    background: url(../img/license2.png);
+}
+.license3 {
+    background: url(../img/license3.png);
+}
+.license4 {
+    background: url(../img/license4.png);
+}
+.licenses-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+//секция О клинике
+.about-clinic {
+    margin-top: 93px;
+    position: relative;
+    .carousel {
+        width: 300px;
+        margin: 33px auto 0px auto;
+    }
+    .arr-left {
+        top: 750px;
+        left: -20px;
+    }
+    .arr-right {
+        top: 750px;
+        left: 1270px;
+        
+    }
+}
+.about-clinic-block {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-clinic-block-description {
+    width: 631px;
+    p {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        color: $dark-gray;
+    }
+}
+.about-clinic-list {
+    list-style-type: none;
+    padding: 0;
+    align-content: space-between;
+}
+.about-clinic-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.about-clinic-block-img {
+    width: 630px;
+    height: 400px;
+}
+.clinic-pictures {
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+}
+.clinic-picture1 {
+    background: url(../img/clinic-picture1.png);
+}
+.clinic-picture2 {
+    background: url(../img/clinic-picture2.png);
+}
+.clinic-picture3 {
+    background: url(../img/clinic-picture3.png);
+}
+.clinic-picture4 {
+    background: url(../img/clinic-picture4.png);
 }
