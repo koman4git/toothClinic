@@ -1414,3 +1414,249 @@ header {
 .clinic-picture4 {
     background: url(../img/clinic-picture4.png);
 }
+//секция формы обратной связи
+.callback-form-section {
+    background: url(../img/callback-background.png);
+    height: 500px;
+    margin-top: 93px;
+    position: relative;
+}
+.callback-form {
+    width: 520px;
+    height: 448px;
+    background: $white-color;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    position: absolute;
+    top: 26px;
+    left: 1087px;
+    text-align: center;
+    justify-content: center;
+}
+.callback-form-header {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    color: #046DBF;
+    width: 490px;
+    margin: 30px auto;
+}
+.callback-form-description {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $turquoise-color;
+    width: 370px;
+    margin: 30px auto;
+}
+form {
+    flex-wrap: wrap;
+}
+input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #BDF8F9;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-gray;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    color: $light-blue;
+}
+input[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #046DBF;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+input[value] {
+    color: $white;
+}
+//секция с картой
+.map-section {
+    height: 540px;
+    width: 1920px;
+    position: relative;
+}
+.map-block {
+    position:relative;
+    // overflow:hidden;
+    height: 540px;
+    width: 1920px;
+}
+.contact-block {
+    width: 538px;
+    height: 480px;
+    background: $turquoise-color;
+    opacity: 0.8;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    position: absolute;
+    top: 26px;
+    left: 315px;
+    box-sizing: border-box;
+    padding: 60px 140px 25px 60px;
+    h2 {
+        margin: 0 0 30px 0;
+        text-align: left;
+        color: $white;
+    }
+    .messenger-block {
+        margin: 0;
+        
+    }
+    .messenger-block-text {
+        color: $white;
+    }
+}
+.contact-block-address {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+    margin-bottom: 20px;
+}
+.get-directions {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #046DBF;
+    text-decoration: none;
+}
+.get-directions-icon {
+    position: absolute;
+    top: 182px;
+    left: 230px;
+}
+.working-hours {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    margin-top: 12px;
+}
+.last-record {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+}
+.phone_numbers-list {
+    padding: 0;
+}
+.phone_number-item {
+    list-style-type: none;
+    a {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: $white;
+        text-decoration: none;
+    }
+}
+.vk-group {
+    align-items: center;
+    display: flex;
+    margin: 5px 0px 0px 0px;
+    .vk-icon {
+        margin: 0;
+    }
+}
+.vk-group-link {
+    text-decoration: none;
+    display: block;
+    margin-left: 20px;
+    color: $white;
+}
+//подвал сайта
+footer {
+    background: $white-color;
+}
+.footer {
+   padding-top: 34px;
+   padding-bottom: 30px;
+   box-sizing: border-box; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer_info {
+    display: flex;
+    align-items: center;
+    .info_block {
+        margin-left: 20px;
+    }
+    .clinic-name {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: $turquoise-color;
+    }
+}
+nav {
+    width: 677px;
+}
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $turquoise-color;
+    }
+    a:hover {
+        color: #046DBF;
+    }
+}

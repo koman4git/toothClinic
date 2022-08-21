@@ -1627,3 +1627,332 @@ header {
 .clinic-picture4 {
   background: url(../img/clinic-picture4.png);
 }
+
+.callback-form-section {
+  background: url(../img/callback-background.png);
+  height: 500px;
+  margin-top: 93px;
+  position: relative;
+}
+
+.callback-form {
+  width: 520px;
+  height: 448px;
+  background: #F3FEFE;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  position: absolute;
+  top: 26px;
+  left: 1087px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.callback-form-header {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #046DBF;
+  width: 490px;
+  margin: 30px auto;
+}
+
+.callback-form-description {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #099DBA;
+  width: 370px;
+  margin: 30px auto;
+}
+
+form {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #BDF8F9;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #474551;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input::-webkit-input-placeholder {
+  color: #BDF8F9;
+}
+
+input::-moz-placeholder {
+  color: #BDF8F9;
+}
+
+input:-ms-input-placeholder {
+  color: #BDF8F9;
+}
+
+input::-ms-input-placeholder {
+  color: #BDF8F9;
+}
+
+input::placeholder {
+  color: #BDF8F9;
+}
+
+input[type=submit] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #046DBF;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+input[value] {
+  color: #FFFFFF;
+}
+
+.map-section {
+  height: 540px;
+  width: 1920px;
+  position: relative;
+}
+
+.map-block {
+  position: relative;
+  height: 540px;
+  width: 1920px;
+}
+
+.contact-block {
+  width: 538px;
+  height: 480px;
+  background: #099DBA;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  position: absolute;
+  top: 26px;
+  left: 315px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 60px 140px 25px 60px;
+}
+.contact-block h2 {
+  margin: 0 0 30px 0;
+  text-align: left;
+  color: #FFFFFF;
+}
+.contact-block .messenger-block {
+  margin: 0;
+}
+.contact-block .messenger-block-text {
+  color: #FFFFFF;
+}
+
+.contact-block-address {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.get-directions {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #046DBF;
+  text-decoration: none;
+}
+
+.get-directions-icon {
+  position: absolute;
+  top: 182px;
+  left: 230px;
+}
+
+.working-hours {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+
+.last-record {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.phone_numbers-list {
+  padding: 0;
+}
+
+.phone_number-item {
+  list-style-type: none;
+}
+.phone_number-item a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.vk-group {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0px 0px 0px;
+}
+.vk-group .vk-icon {
+  margin: 0;
+}
+
+.vk-group-link {
+  text-decoration: none;
+  display: block;
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+
+footer {
+  background: #F3FEFE;
+}
+
+.footer {
+  padding-top: 34px;
+  padding-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_info .info_block {
+  margin-left: 20px;
+}
+.footer_info .clinic-name {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #099DBA;
+}
+
+nav {
+  width: 677px;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #099DBA;
+}
+.nav-menu a:hover {
+  color: #046DBF;
+}
